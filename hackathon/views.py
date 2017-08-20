@@ -10,10 +10,10 @@ class MyPantry(View):
     def get(self, request, *args, **kwargs):
         search_string = request.GET['search_string'].strip()
         print(search_string)
-        if search_string is None or not search_string:
-            querySet = Product.objects.all()
+        if search_string is not None:
+            querySet = Product.objects.filter(food_name__icontains=search_string)
         else:
-            querySet = Product.objects.filter(food_name__contains=search_string)
+            querySet = Product.objects.all()
         temp=[]
         object_list=[]
         for i in range(len(querySet)):
