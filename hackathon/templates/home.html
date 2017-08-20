@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}
+{{block.super}} || Home
+{% endblock %}
+{% block content %}
+{% for obj in object_list %}
+<p>{{obj.food_name}} || {{obj.expiration_date}}</p>
+{% endfor %}
+{% endblock %}
