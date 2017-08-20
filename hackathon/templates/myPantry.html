@@ -21,6 +21,16 @@ My Pantry
 
 {% block content %}
 <table>
+{%- for row in object_list|batch(3, '&nbsp;') %}
+  <tr>
+  {%- for column in row %}
+    <td>{{ column }}</td>
+  {%- endfor %}
+  </tr>
+{%- endfor %}
+</table>
+
+<!-- <table>
     {% for objects in object_list|batch(3) %}
     <tr>
     {% for object in objects %}
@@ -28,5 +38,5 @@ My Pantry
     {% endfor %}
     </tr>
     {% endfor %}
-</table>
+</table> -->
 {% endblock %}
