@@ -22,15 +22,10 @@ My Pantry
 {% block content %}
 {% set i = 0 %}
 <table>
-{% for obj in object_list %}
-//{% if i%3 == 0 %}
-<tr>
-//{% endif %}
-<td>Image of {{obj.food_name}}</td> <td>{{obj.food_name}}</td>
-//    {% if i%3 == 0 %}
-</tr>
-//    {% endif %}
-    {% set i = i+1 %}
+    {% for obj in object_list %}
+    <tr>
+        <td>Image of {{obj.food_name}}</td> <td>{{obj.food_name}}</td>
+    </tr>
     {% endfor %}
 </table>
 {% endblock %}
