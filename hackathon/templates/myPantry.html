@@ -48,8 +48,8 @@ My Pantry
     {% for objects in object_list %}
     <tr>
       {% for object in objects %}
-      <td><img src="https://s3.amazonaws.com/greenpantry-bucket/{{object.food_name}}.PNG" alt="{{object.food_name}}" style="width:106px;height:78px;"></td>
-      <td style = "font-weight: bold;color:{% if object.days_remaining <= 2 %}red {% elif object.days_remaining >= 5 %} green {% else %} orange {% endif %}">{{object.food_name}}</td>
+      <td ><img src="https://s3.amazonaws.com/greenpantry-bucket/{{object.food_name}}.PNG" alt="{{object.food_name}}" style="width:106px;height:78px;"></td>
+      <td style = "width:150px;padding-left:10px;padding-right:50px;font-weight: bold;color:{% if object.days_remaining <= 2 %}red {% elif object.days_remaining >= 5 %} green {% else %} orange {% endif %}">{{object.food_name}}</td>
       {% endfor %}
     </tr>
     {% endfor %}
