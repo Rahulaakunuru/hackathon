@@ -19,6 +19,7 @@ class MyPantry(View):
         if(len(temp)!=0):
             object_list.append(temp)
         context = {"object_list" : object_list}
+        print(context)
         return render(request, 'myPantry.html', context)
 
 
