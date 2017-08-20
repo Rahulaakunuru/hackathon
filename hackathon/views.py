@@ -41,6 +41,33 @@ class MyPantrySearch(View):
         return render(request, 'myPantry.html', context)
 
 
+class MyPantryAddProduct(View):
+    def get(self, request, *args, **kwargs):
+        food_name = request.GET['food_name'].strip()
+        food_expiry_date = request.GET['food_expiration_date'].strip()
+        food_id = Product.objects.all().count() + 1
+        location = 'Fridge'
+        product = Product()
+        product.food_id = str(food_id)
+        product.food_name = food_name
+        product.expiration_date = parser.parse(food_expiry_date)
+        product.location = location
+        product.save()
+        querySet = Product.objects.all()
+        temp = []
+        object_list = []
+        for i in range(len(querySet)):
+            querySet[i].days_remaining = (parser.parse(str(querySet[i].expiration_date)) - datetime.now()).days
+            temp.append(querySet[i])
+            if (i + 1) % 3 == 0:
+                object_list.append(temp)
+                temp = []
+        if len(temp) != 0:
+            object_list.append(temp)
+        context = {"object_list": object_list}
+        return render(request, 'myPantry.html', context)
+
+
 class MyMeal(View):
     def get(self, request, *args, **kwargs):
         querySet = Meal.objects.all()
