@@ -3,8 +3,23 @@ from django.shortcuts import render
 
 from .models import Product
 
+
 class MyPantry(View):
     def get(self, request, *args, **kwargs):
         querySet = Product.objects.all()
         context = {"object_list" : querySet}
         return render(request, 'myPantry.html', context)
+
+
+class MyMeal(View):
+    def get(self, request, *args, **kwargs):
+        querySet = Product.objects.all()
+        context = {"object_list" : querySet}
+        return render(request, 'myMeal.html', context)
+
+
+class MyOrders(View):
+    def get(self, request, *args, **kwargs):
+        querySet = Product.objects.all()
+        context = {"object_list" : querySet}
+        return render(request, 'myOrders.html', context)
