@@ -20,7 +20,7 @@ My Pantry
 {% endblock %}
 
 {% block content %}
-{{i = 0}}
+{% set i = 0 %}
 <table>
 {% for obj in object_list %}
 {% if i%3 == 0 %}
@@ -30,7 +30,7 @@ My Pantry
     {% if i%3 == 0 %}
 </tr>
     {% endif %}
-    {{i = i+1 }}
+    {% set i = i+1 %}
     {% endfor %}
 </table>
 {% endblock %}
