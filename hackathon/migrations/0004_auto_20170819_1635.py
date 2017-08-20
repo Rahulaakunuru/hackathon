@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='product',
             name='expiration_date',
-            field=models.IntegerField(),
+            field=models.DateField(),
         ),
         migrations.AddField(
             model_name='meal',
