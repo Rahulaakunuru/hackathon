@@ -26,7 +26,7 @@ My Pantry
     <tr>
       {% for object in objects %}
       <td>Image of {{object.food_name}}</td>
-      <td style = "color:{% if object.days_remaining <= 3 %}{{red}}{% endif %}">{{object.food_name}}</td>
+      <td style = "color:{% if object.days_remaining <= 3 %}red{% endif %}">{{object.food_name}}</td>
       {% endfor %}
     </tr>
     {% endfor %}
