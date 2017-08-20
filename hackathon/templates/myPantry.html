@@ -22,30 +22,24 @@ My Pantry
 {% block content %}
 
 <div class="container">
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Add Item</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">+ Add Item</button>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <form action="/createProduct"><div class="modal-body">
+                    <input id="food_name" name="food_name" type="text" class="form-control" placeholder="Food Name" /></br>
+                    <input id="Expiration" name="food_expiration_date" type="date" class="form-control" placeholder="Expiration Date" />
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
+                    </div>
+                </form>
+            </div>
         </div>
-          <form action="/createItem"><div class="modal-body">
-              <input id="food_name" name="food_name" type="text" class="form-control" placeholder="Food Name" />
-              <input id="Expiration" name="food_name" type="date" class="form-control" placeholder="Food Name" />
-          </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
-              </div>
-          </form>
-      </div>
     </div>
-  </div>
-
 </div>
 <table>
     {% for objects in object_list %}
