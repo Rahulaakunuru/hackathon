@@ -10,6 +10,7 @@ class MyPantry(View):
         temp=[]
         object_list=[]
         for i in range(len(querySet)):
+            print(querySet[i]['expiration_date'])
             temp.append(querySet[i])
             if (i+1)%3 == 0:
                 object_list.append(temp)
@@ -17,7 +18,7 @@ class MyPantry(View):
         if len(temp)!=0:
             object_list.append(temp)
         context = {"object_list" : object_list}
-        print(context)
+        #print(context)
         return render(request, 'myPantry.html', context)
 
 
