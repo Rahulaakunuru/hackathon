@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block title %}
-{{block.super}} || Home
+{{block.super}} || My Pantry
+{% endblock %}
+{% block tab_name %}
+My Pantry
 {% endblock %}
 {% block content %}
 {% for obj in object_list %}
