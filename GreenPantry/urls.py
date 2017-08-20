@@ -19,11 +19,12 @@ from django.contrib import admin
 from hackathon.views import MyPantry
 from hackathon.views import MyMeal
 from hackathon.views import MyOrders
+from hackathon.views import MyPantrySearch
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 url(r'^myPantry/', MyPantry.as_view()),
 url(r'^myMeal/', MyMeal.as_view()),
 url(r'^myOrders/', MyOrders.as_view()),
-url(r'^searchPantry/', MyPantry.as_view()),
+url(r'^searchPantry/', MyPantrySearch.as_view()),
 ]
