@@ -8,6 +8,7 @@ from .models import Product
 
 class MyPantry(View):
     def get(self, request, *args, **kwargs):
+        print(request.GET)
         querySet = Product.objects.all()
         temp=[]
         object_list=[]
