@@ -23,11 +23,11 @@ My Pantry
 {{i = 0}}
 <table>
 {% for obj in object_list %}
-{% if(i%3 == 0) %}
+{% if i%3 == 0 %}
 <tr>
 {% endif %}
 <td>Image of {{obj.food_name}}</td> <td>{{obj.food_name}}</td>
-    {% if(i%3 == 0) %}
+    {% if i%3 == 0 %}
 </tr>
     {% endif %}
     {{i = i+1 }}

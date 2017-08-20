@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d5dd74-6b92-4f0a-9e2c-28df698a6cf9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/templates/myMeal.html" afterPath="$PROJECT_DIR$/hackathon/templates/myMeal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/templates/myOrders.html" afterPath="$PROJECT_DIR$/hackathon/templates/myOrders.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/templates/myPantry.html" afterPath="$PROJECT_DIR$/hackathon/templates/myPantry.html" />
     </list>
     <ignored path="src.iws" />
@@ -27,8 +25,8 @@
       <file leaf-file-name="myPantry.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackathon/templates/myPantry.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+            <state relative-caret-position="358">
+              <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -636,8 +634,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/templates/myPantry.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        <state relative-caret-position="358">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
           <folding />
         </state>
       </provider>
