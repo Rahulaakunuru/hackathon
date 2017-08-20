@@ -50,7 +50,7 @@ class MyPantryAddProduct(View):
         product = Product()
         product.food_id = str(food_id)
         product.food_name = food_name
-        product.expiration_date = parser.parse(food_expiry_date)
+        product.expiration_date = datetime.datetime.strptime(food_expiry_date, "%Y-%m-%d").date()
         product.location = location
         product.save()
         querySet = Product.objects.all()
