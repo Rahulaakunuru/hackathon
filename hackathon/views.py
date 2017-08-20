@@ -53,6 +53,7 @@ class MyPantryAddProduct(View):
         product.food_id = str(food_id)
         product.food_name = food_name
         print("##############Just before Expiration###############")
+        print(type(food_expiry_date))
         product.expiration_date = datetime.datetime.strptime(food_expiry_date, "%Y-%m-%d").date()
         print("##############Just after Expiration###############")
         product.location = location

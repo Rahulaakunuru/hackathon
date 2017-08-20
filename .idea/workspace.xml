@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18d5dd74-6b92-4f0a-9e2c-28df698a6cf9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/models.py" afterPath="$PROJECT_DIR$/hackathon/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/templates/myPantry.html" afterPath="$PROJECT_DIR$/hackathon/templates/myPantry.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackathon/views.py" afterPath="$PROJECT_DIR$/hackathon/views.py" />
     </list>
     <ignored path="src.iws" />
@@ -43,8 +41,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackathon/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+            <state relative-caret-position="374">
+              <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -95,9 +93,9 @@
         <option value="$PROJECT_DIR$/hackathon/templates/base.html" />
         <option value="$PROJECT_DIR$/hackathon/templates/myOrders.html" />
         <option value="$PROJECT_DIR$/GreenPantry/urls.py" />
-        <option value="$PROJECT_DIR$/hackathon/views.py" />
         <option value="$PROJECT_DIR$/hackathon/templates/myPantry.html" />
         <option value="$PROJECT_DIR$/hackathon/models.py" />
+        <option value="$PROJECT_DIR$/hackathon/views.py" />
       </list>
     </option>
   </component>
@@ -685,8 +683,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="49" column="38" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+        <state relative-caret-position="374">
+          <caret line="55" column="35" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
