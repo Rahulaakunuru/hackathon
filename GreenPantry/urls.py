@@ -17,8 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from hackathon.views import MyPantry
+from hackathon.views import MyMeal
+from hackathon.views import MyOrders
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 url(r'^myPantry/', MyPantry.as_view()),
+url(r'^myMeal/', MyMeal.as_view()),
+url(r'^myOrders/', MyOrders.as_view()),
 ]
