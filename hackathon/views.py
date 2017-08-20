@@ -43,6 +43,7 @@ class MyPantrySearch(View):
 
 class MyPantryAddProduct(View):
     def get(self, request, *args, **kwargs):
+        print("##############Inside Add Product Methond ###############")
         food_name = request.GET['food_name'].strip()
         food_expiry_date = request.GET['food_expiration_date'].strip()
         food_id = Product.objects.all().count() + 1
