@@ -1,0 +1,15 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <title>Green Pantry {% block title %}{% endblock %}</title>
+        {% include 'snippets/css.html' %}
+    </head>
+    <body>
+    <div class="container">
+        <h1>Green Pantry</h1>
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% include 'snippets/js.html' %}
+    </body>
+</html>
