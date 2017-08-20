@@ -20,23 +20,13 @@ My Pantry
 {% endblock %}
 
 {% block content %}
-<table>
-{% for row in object_list|batch(3, '&nbsp;') %}
-  <tr>
-  {% for column in row %}
-    <td>{{ column }}</td>
-  {% endfor %}
-  </tr>
-{% endfor %}
-</table>
 
-<!-- <table>
-    {% for objects in object_list|batch(3) %}
+ <table>
+    {% for object in object_list %}
     <tr>
-    {% for object in objects %}
-    <td>Image of {{object.food_name}}</td> <td>{{object.food_name}}</td>
-    {% endfor %}
+      <td>Image of {{object.food_name}}</td>
+      <td>{{object.food_name}}</td>
     </tr>
     {% endfor %}
-</table> -->
+</table>
 {% endblock %}
