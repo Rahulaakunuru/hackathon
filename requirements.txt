@@ -6,7 +6,9 @@ django-crispy-forms==1.6.1
 django-storages==1.6.5
 docutils==0.14
 gunicorn==19.7.1
+Jinja2==2.9.6
 jmespath==0.9.3
+MarkupSafe==1.0
 olefile==0.44
 Pillow==4.2.1
 psycopg2==2.7.3
