@@ -24,6 +24,7 @@ from hackathon.views import MyPantryAddProduct
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+url(r'^/', MyPantry.as_view()),
 url(r'^myPantry/', MyPantry.as_view()),
 url(r'^myMeal/', MyMeal.as_view()),
 url(r'^myOrders/', MyOrders.as_view()),
