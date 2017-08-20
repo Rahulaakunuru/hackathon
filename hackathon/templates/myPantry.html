@@ -25,7 +25,7 @@ My Pantry
     {% for objects in object_list %}
     <tr>
       {% for object in objects %}
-      <td>Image of {{object.food_name}}</td>
+      <td><img src="https://s3.amazonaws.com/greenpantry-bucket/brand_logo.png" alt="Green Pantry" style="width:150px;height:50px;"></td>
       <td style = "font-weight: bold;color:{% if object.days_remaining <= 2 %}red {% elif object.days_remaining >= 5 %} green {% else %} orange {% endif %}">{{object.food_name}}</td>
       {% endfor %}
     </tr>
