@@ -9,7 +9,8 @@ from .models import Product
 class MyPantry(View):
     def get(self, request, *args, **kwargs):
         search_string = request.GET['search_string']
-        if(search_string is None or search_string == ""):
+        print(search_string)
+        if(search_string is None or search_string. == ""):
             querySet = Product.objects.all()
         else:
             querySet = Product.objects.filter(food_name__contains=search_string)
