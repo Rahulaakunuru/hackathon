@@ -25,4 +25,5 @@ urlpatterns = [
 url(r'^myPantry/', MyPantry.as_view()),
 url(r'^myMeal/', MyMeal.as_view()),
 url(r'^myOrders/', MyOrders.as_view()),
+url(r'^searchPantry/', MyPantry.as_view()),
 ]
