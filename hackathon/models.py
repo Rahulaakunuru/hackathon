@@ -1,8 +1,8 @@
 from django.db import models
 
 class Product(models.Model):
-    food_id         =   models.AutoField(primary_key=True)
-    food_name       =   models.CharField(max_length=128, null=False, blank=False)
+    food_id         =   models.CharField(primary_key=True, auto_created=True, max_length=10)
+    food_name       =   models.CharField(max_length=128, null=False, blank=False,)
     expiration_date =   models.DateField(auto_now=False, auto_now_add=False)
     location        =   models.CharField(max_length=128)
     Image           =   models.CharField(max_length=100, null=True, blank=True)
