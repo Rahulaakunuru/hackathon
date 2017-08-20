@@ -7,6 +7,7 @@ class Product(models.Model):
     location        =   models.CharField(max_length=128)
     Image           =   models.CharField(max_length=100, null=True, blank=True)
 
+
 class Meal(models.Model):
     food_id     = models.ForeignKey('Product',on_delete=models.CASCADE)
     meal_id     = models.CharField(max_length=128, null= False, blank= False)
