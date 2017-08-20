@@ -2,6 +2,7 @@ from django.views.generic import View
 from django.shortcuts import render
 from datetime import datetime
 from .models import Product
+from .models import Meal
 from dateutil import parser
 
 
@@ -42,13 +43,11 @@ class MyPantrySearch(View):
 
 class MyMeal(View):
     def get(self, request, *args, **kwargs):
-        querySet = Product.objects.all()
+        querySet = Meal.objects.all()
         context = {"object_list" : querySet}
         return render(request, 'myMeal.html', context)
 
 
 class MyOrders(View):
     def get(self, request, *args, **kwargs):
-        querySet = Product.objects.all()
-        context = {"object_list" : querySet}
-        return render(request, 'myOrders.html', context)
+        return render(request, 'myOrders.html')
