@@ -7,16 +7,14 @@ from .models import Product
 class MyPantry(View):
     def get(self, request, *args, **kwargs):
         querySet = Product.objects.all()
-        index=0;
         temp=[]
         object_list=[]
         for i in range(len(querySet)):
-            i+=1
             temp.append(querySet[i])
-            if i%3==0:
+            if (i+1)%3 == 0:
                 object_list.append(temp)
                 temp = []
-        if(len(temp)!=0):
+        if len(temp)!=0:
             object_list.append(temp)
         context = {"object_list" : object_list}
         print(context)
