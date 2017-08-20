@@ -44,7 +44,9 @@ class MyPantrySearch(View):
 class MyPantryAddProduct(View):
     def get(self, request, *args, **kwargs):
         food_name = request.GET['food_name'].strip()
+        print("##############Just before get Expiration###############")
         food_expiry_date = request.GET['food_expiration_date'].strip()
+        print("##############Just after get Expiration###############")
         food_id = Product.objects.all().count() + 1
         location = 'Fridge'
         product = Product()
