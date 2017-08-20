@@ -71,9 +71,7 @@ class MyPantryAddProduct(View):
 
 class MyMeal(View):
     def get(self, request, *args, **kwargs):
-        querySet = Meal.objects.all()
-        context = {"object_list" : querySet}
-        return render(request, 'myMeal.html', context)
+        return render(request, 'myMeal.html')
 
 
 class MyOrders(View):
