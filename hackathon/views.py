@@ -1,5 +1,6 @@
 from django.views.generic import View
 from django.shortcuts import render
+from datetime import date
 
 from .models import Product
 
@@ -10,7 +11,7 @@ class MyPantry(View):
         temp=[]
         object_list=[]
         for i in range(len(querySet)):
-            print(querySet[i].expiration_date)
+            print((date(querySet[i].expiration_date) - date.today()).days)
             temp.append(querySet[i])
             if (i+1)%3 == 0:
                 object_list.append(temp)
