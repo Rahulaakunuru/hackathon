@@ -22,10 +22,12 @@ My Pantry
 {% block content %}
 
  <table>
-    {% for object in object_list %}
+    {% for objects in object_list %}
     <tr>
-      <td>Image of {{object.food_name}}</td>
-      <td>{{object.food_name}}</td>
+      {% for object in objects %}
+      <td>Image of {{object}}</td>
+      <td >{{object}}</td>
+      {% endfor %}
     </tr>
     {% endfor %}
 </table>
