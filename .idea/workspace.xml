@@ -37,10 +37,10 @@
       <file leaf-file-name="myPantry.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackathon/templates/myPantry.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
               <folding>
-                <element signature="e#368#374#0" expanded="true" />
+                <element signature="e#367#373#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -648,10 +648,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackathon/templates/myPantry.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
           <folding>
-            <element signature="e#368#374#0" expanded="true" />
+            <element signature="e#367#373#0" expanded="true" />
           </folding>
         </state>
       </provider>

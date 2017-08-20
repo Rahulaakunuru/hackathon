@@ -21,13 +21,13 @@ My Pantry
 
 {% block content %}
 <table>
-{%- for row in object_list|batch(3, '&nbsp;') %}
+{% for row in object_list|batch(3, '&nbsp;') %}
   <tr>
-  {%- for column in row %}
+  {% for column in row %}
     <td>{{ column }}</td>
-  {%- endfor %}
+  {% endfor %}
   </tr>
-{%- endfor %}
+{% endfor %}
 </table>
 
 <!-- <table>
