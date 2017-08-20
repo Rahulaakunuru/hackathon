@@ -21,8 +21,8 @@ My Pantry
 
 {% block content %}
 <table>
+    {% set index = 10 %}
     {% for obj in object_list %}
-    {{ loop.index }}
     <tr>
         <td>Image of {{obj.food_name}}</td> <td>{{obj.food_name}}</td>
     </tr>
