@@ -24,7 +24,7 @@ My Pantry
     {% for objects in object_list|batch(3) %}
     <tr>
     {% for object in objects %}
-    <td>Image of {{obj.food_name}}</td> <td>{{obj.food_name}}</td>
+    <td>Image of {{object.food_name}}</td> <td>{{object.food_name}}</td>
     {% endfor %}
     </tr>
     {% endfor %}
