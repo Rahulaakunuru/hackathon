@@ -22,9 +22,13 @@ My Pantry
 {% block content %}
 <table>
     {% for obj in object_list %}
+    {% if loop.index is divisibleby 3 %}
     <tr>
+        {% endif %}
         <td>Image of {{obj.food_name}}</td> <td>{{obj.food_name}}</td>
+        {% if loop.index is divisibleby 3 %}
     </tr>
+    {% endif %}
     {% endfor %}
 </table>
 {% endblock %}
