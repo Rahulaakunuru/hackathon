@@ -15,6 +15,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='product',
             name='food_id',
-            field=models.AutoField(primary_key=True, serialize=False),
+            field=models.CharField(auto_created=True, max_length=10, primary_key=True, serialize=False),
         ),
     ]
