@@ -10,13 +10,13 @@
             <tr>
                 <td rowspan="2" colspan="2"><img src="https://s3.amazonaws.com/greenpantry-bucket/brand_logo.png" alt="Green Pantry" style="width:300px;height:100px;"></td>
                 <td class="navTd">
-                    <a href="#" class="navAnchorActive">My Pantry</a>
+                    <a href="/myPantry" class={% block mypantry %} {% endblock %}>My Pantry</a>
                 </td>
                 <td class="navTd">
-                    <a href="#" class="navAnchorInactive">My Meals</a>
+                    <a href="/myMeals" class={% block mymeal %} {% endblock %}>My Meals</a>
                 </td>
                 <td class="navTd">
-                    <a href="#" class="navAnchorInactive">My Orders</a>
+                    <a href="/myOrders" class={% block myorders %} {% endblock %}>My Orders</a>
                 </td>
             </tr>
             <tr>

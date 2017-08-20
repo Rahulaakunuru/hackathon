@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}
+{{block.super}} || My Meal
+{% endblock %}
+
+{% block tab_name %}
+My Meal
+{% endblock %}
+
+{% block mypantry %}
+"navAnchorInactive"
+{% endblock %}
+
+{% block mymeal %}
+"navAnchorActive"
+{% endblock %}
+
+{% block myorders %}
+"navAnchorInactive"
+{% endblock %}
+
+{% block content %}
+{% for obj in object_list %}
+<p>{{obj.food_name}} || {{obj.expiration_date}}</p>
+{% endfor %}
+{% endblock %}

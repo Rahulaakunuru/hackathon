@@ -2,9 +2,23 @@
 {% block title %}
 {{block.super}} || My Pantry
 {% endblock %}
+
 {% block tab_name %}
 My Pantry
 {% endblock %}
+
+{% block mypantry %}
+"navAnchorActive"
+{% endblock %}
+
+{% block mymeal %}
+"navAnchorInactive"
+{% endblock %}
+
+{% block myorders %}
+"navAnchorInactive"
+{% endblock %}
+
 {% block content %}
 {% for obj in object_list %}
 <p>{{obj.food_name}} || {{obj.expiration_date}}</p>
