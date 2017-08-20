@@ -12,7 +12,7 @@ class MyPantry(View):
         temp=[]
         object_list=[]
         for i in range(len(querySet)):
-            print((parser.parse(str(querySet[i].expiration_date)) - datetime.now()).days)
+            querySet[i].days_remaining = (parser.parse(str(querySet[i].expiration_date)) - datetime.now()).days
             temp.append(querySet[i])
             if (i+1)%3 == 0:
                 object_list.append(temp)

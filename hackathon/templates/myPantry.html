@@ -25,7 +25,7 @@ My Pantry
     {% for objects in object_list %}
     <tr>
       {% for object in objects %}
-      <td>{{object.expiration_date}}</td>
+      <td>{{object.days_remaining}}</td>
       <td >{{object.food_name}}</td>
       {% endfor %}
     </tr>
